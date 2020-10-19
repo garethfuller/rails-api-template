@@ -19,7 +19,7 @@ require "rails/test_unit/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module App
+module ApiTemplate
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
@@ -35,6 +35,6 @@ module App
     config.api_only = true
 
     config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore, key: '_app_session', domain: (ENV['DOMAIN'] || :all)
+    config.middleware.use ActionDispatch::Session::CookieStore, key: '_api_template_session', domain: (ENV['DOMAIN'] || :all)
   end
 end
