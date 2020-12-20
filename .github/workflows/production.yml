@@ -6,7 +6,7 @@
 #   workflow_dispatch:
 
 # env:
-#   IMAGE_PATH: <API_IMAGE_PATH>
+#   IMAGE_PATH: <DOCKER_USERNAME>/<NAMESPACE>-api
 #   URL: https://<API_DOMAIN>
 #   K8S_NAMESPACE: <NAMESPACE>
 
