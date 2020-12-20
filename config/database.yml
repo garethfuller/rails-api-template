@@ -10,10 +10,10 @@ dev_defaults: &dev_defaults
 
 development:
   <<: [*defaults, *dev_defaults]
-  database: api_template_development
+  database: <NAMESPACE>_development
 test:
   <<: [*defaults, *dev_defaults]
-  database: api_template_test
+  database: <NAMESPACE>_test
 production:
   <<: *defaults
   url: <%= ENV['DATABASE_URL'] %>

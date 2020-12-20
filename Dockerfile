@@ -27,5 +27,5 @@ COPY --chown=deploy:deploy . /home/deploy/app/
 
 EXPOSE 5000
 # test build:
-# docker build -t app-name/api .
-# docker run -i -p 5000:3000 app-name/api
+# docker build -t <NAMESPACE>/api .
+# docker run -i -p 5000:3000 <NAMESPACE>/api

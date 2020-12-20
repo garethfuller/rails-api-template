@@ -8,9 +8,9 @@ on:
         required: true
 
 env:
-  IMAGE_PATH: garethfuller/app-api
-  URL: https://api.app.com
-  K8S_NAMESPACE: app
+  IMAGE_PATH: <API_IMAGE_PATH>
+  URL: https://<API_DOMAIN>
+  K8S_NAMESPACE: <NAMESPACE>
 
 jobs:
   deploy:
