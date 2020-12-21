@@ -32,7 +32,7 @@ spec:
           - name: PORT
             value: '5000'
           - name: CORS_ORIGINS
-            value: <FRONT_DOMAIN>
+            value: <WEB_DOMAIN>
           - name: DATABASE_URL
             valueFrom:
               secretKeyRef:
